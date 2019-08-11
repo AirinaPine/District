@@ -1,0 +1,477 @@
+
+/* RESET */
+
+/* @import 'normalize.css'; */
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+hr {
+  margin: 0rem auto;
+  width: 80%;
+}
+
+h2 {
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin: 15px auto 15px;
+  line-height: 1.8em;
+  text-align: justify;
+  letter-spacing: 0.05em;
+} 
+
+/* Content Container*/
+
+.container {
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+/* BUTTON MODULES */
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .3rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+}
+/* btn-primary buttons for profiles and message */
+.btn-primary {
+    background: #dbbaab;
+    border-color: #dbbaab;
+    color: white;
+}
+
+.btn-primary:focus {
+  outline: none;
+}
+
+.btn-nav {
+  color: white;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.btn-nav:hover {
+  background-color: #dbbaab;
+}
+
+.btn-nav:active, .btn-primary:active {
+  background-color: #B59088;
+}
+
+.btn-toggle-menu {
+    position: absolute;
+    top: .8rem;
+    right: 1.2rem;
+    display: none;
+    color: #dbbaab;
+    transition: all 3s ease 0s;
+    cursor: pointer;
+}
+
+.icon i {
+  height: 3rem;
+}
+
+/* HEADER MODULES */
+
+header {
+    background: #424147;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* LOGO MODULES */
+
+#logo{
+  overflow: hidden;
+  /* the reason for hidden owerflow is to mask logo for a mobile */
+/*  display: flex;*/
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logo-cover {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgb(219, 186, 171);
+  
+  border-radius: 50%;
+  text-align: center;
+}
+
+#logo img {
+  height: 100%;
+}
+
+/* NAVIGATION MODULES */
+
+nav 
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#menu2 {
+    
+}
+
+/* PARALLAX MODULEs*/
+
+#parallax {
+  background-image: url(../images/hero.jpeg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  position: relative;*/
+  opacity: 0.90;
+  z-index: -1;
+}
+
+.inner-container {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding: 22rem 1rem 1rem;
+  z-index: 99;
+}
+
+.inner-container h1 {
+  margin-bottom: .4rem;
+    font-size: 2.8rem;
+}
+
+.inner-container h1, .inner-container h6{
+  letter-spacing: 0.3em;
+}
+
+/* ABOUT / CONTENT MODULES */
+
+#about {
+  width: 100%;
+}
+
+/* .content, .content-body, .content-img {
+  overflow: hidden;
+} */
+
+.content {
+  margin: 5rem auto;
+  width: 90%;
+}
+
+.content-body {
+  margin: 2.5rem auto;
+  width: 80%; 
+}
+
+.content-img img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.content-img{
+  display: inline-block;
+  max-width: 60%;
+}
+
+
+/* TOP BUTTON MODULES */
+
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  background-color: #dbbaab;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+#btn-top:hover {
+  background-color: #E9CCC6;
+}
+
+#btn-top:active {
+  background-color: #B59088;
+}
+
+/* YOUTUBE VIDEO MODULES */
+
+.video-wrap {
+  margin: 5rem;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+iframe {
+  margin: 1rem;
+}
+
+/* MEDIA / LEARN WITH US MODULES */
+
+.media-container {
+  margin: 4rem;
+}
+
+.media-wrap {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.media {
+  width: 28rem;
+}
+
+.media a button {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.media > img {
+  width: 60%;
+}
+
+.media > p {
+  max-width: 80%;
+}
+
+/* CONTACT US */
+
+.contact h2 {
+  text-align: left;
+  margin-left: 20%;
+}
+
+#contact {
+  background: #555459;
+  color: #e1e1e1;
+}
+
+.contact {
+  width: 80%;
+  padding: 3rem 0rem;
+  margin: 2rem auto;
+}
+
+.contact-wrap {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  width: 25rem;
+}
+
+/* contact form */
+
+form:last-child {
+  text-align: right;
+}
+
+form > p:first-child {
+  margin-top: 0rem;
+}
+
+.form-control {
+  border-bottom: 1px solid gray;
+  border: none;
+}
+
+input {
+  width: 100%;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  line-height: normal;
+  padding: 1rem;
+}
+
+form #submit {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+/* address */
+
+address {
+  text-align: right;
+  line-height: 1.6rem;
+}
+
+#contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+#contact-data {
+  list-style-type: none;
+}
+
+.contact-item ul li {
+  font-style: normal;
+  margin: .7rem;
+}
+
+.contact-item ul li a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+
+input {
+    padding: .3rem;
+}
+
+/* SOCIAL MEDIA MODULES */
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: 1.9em;
+  padding-top: 2.5rem;
+    margin: 0rem;
+}
+
+.social-media a {
+  color: #232327;
+}
+
+.social-media a:hover {
+  color: #B59088;
+}
+
+/* FOOTER */
+
+.footer p{
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #302f35;
+  font-weight: bold;
+}
+
+/***************************
+****************************
+Media quaries
+****************************
+***************************/
+
+@media screen and
+    (max-width: 1030px) {
+        45rem;
+    }
+
+@media screen and (max-width: 768px) {
+ 
+    #menu {
+        flex-direction: column;
+        display: flex;
+    }
+    
+/*
+    nav {
+        visibility: hidden;
+    }
+*/
+    
+    .media {
+            width: 100%;
+            margin: 2rem auto;
+        }
+    html {
+        font-size: .5rem;
+    }
+    
+    form #submit {
+        width: 80%;
+    }
+    
+    .contact-item {
+        margin-top: 2rem;
+    }
+    .nav-primary {
+/*        display: none;*/
+    }
+    
+    .inner-container {
+        padding-top: 40rem;
+    }
+    
+  h1 {
+    font-size: 3.6em;
+  }
+
+  .btn-toggle-menu {
+    display: inline-block;
+/*    justify-content: flex-end;*/
+  }
+
+
+
+
+@media screen and
+    (max-width: 576px) {
+        .inner-container h1 {
+            font-size: 2.5rem;
+        }
+    }
